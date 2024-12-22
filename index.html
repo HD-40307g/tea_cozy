@@ -4,86 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea Cozy</title>
+    <meta name="description" content="The Tea Cozy: Artisanally curated, sustainable, fair trade tea. Visit us for premium tea blends and more.">
+    <meta name="keywords" content="Tea, Artisan Tea, Fair Trade, Organic, Tea Locations">
+    <meta name="author" content="The Tea Cozy">
+    <title>The Tea Cozy</title>
     <link rel="stylesheet" href="./resources/index.css" type="text/css">
+    <script>
+        let lastScrollY = window.scrollY;
+        const header = document.querySelector('header');
+    
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > lastScrollY) {
+                header.classList.add('hidden'); // Hide when scrolling down
+            } else {
+                header.classList.remove('hidden'); // Show when scrolling up
+            }
+            lastScrollY = window.scrollY;
+        });
+    </script>
 </head>
 
 <body>
-
     <header>
+        <nav>
+            <ul>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#featured-tea">Featured Tea</a></li>
+                <li><a href="#locations">Locations</a></li>
+            </ul>
+        </nav>
         <img class="logo" src="./resources/img-tea-cozy-logo.webp" alt="Tea Cozy Logo">
-        <a href="#mission">Mission</a>
-        <a href="#featured-tea">Featured Tea</a>
-        <a href="#locations">Locations</a>
     </header>
 
     <main>
-
-<!--Mission Section-->
-
-        <section class="mission" id="mission">
-            <h2 class="banner-text">Our Mission</h2>
-            <h4 class="banner-text">Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+        <!-- Mission Section -->
+        <section class="mission" id="mission" aria-labelledby="mission-title">
+            <h2 id="mission-title" class="banner-text">Our Mission</h2>
+            <p class="banner-text">Handpicked, artisanally curated, free-range, sustainable, small-batch, fair trade, organic tea.</p>
         </section>
 
-<!--Featured Tea Section-->
-
-        <section class="featured-tea" id="featured-tea">
-            <h2>Tea of the Month</h2>
-            <h4>What's Steeping at The Tea Cozy?</h4>
+        <!-- Featured Tea Section -->
+        <section class="featured-tea" id="featured-tea" aria-labelledby="featured-tea-title">
+            <h2 id="featured-tea-title">Tea of the Month</h2>
+            <p>What's Steeping at The Tea Cozy?</p>
             <div class="container">
-                <div class="item">
+                <article class="item">
                     <img src="./resources/img-berryblitz.webp" alt="Fall Berry Blitz Tea">
-                    <h4>Fall Berry Blitz Tea</h4>
-                </div>
-                <div class="item">
+                    <h3>Fall Berry Blitz Tea</h3>
+                </article>
+                <article class="item">
                     <img src="./resources/img-spiced-rum.webp" alt="Spiced Rum Tea">
-                    <h4>Spiced Rum Tea</h4>
-                </div>
-                <div class="item">
+                    <h3>Spiced Rum Tea</h3>
+                </article>
+                <article class="item">
                     <img src="./resources/img-donut.webp" alt="Seasonal Donuts">
-                    <h4>Seasonal Donuts</h4>
-                </div>
-                <div class="item">
+                    <h3>Seasonal Donuts</h3>
+                </article>
+                <article class="item">
                     <img src="./resources/img-myrtle-ave.jpg" alt="Myrtle Ave Tea">
-                    <h4>Myrtle Ave Tea</h4>
-                </div>
-                <div class="item">
+                    <h3>Myrtle Ave Tea</h3>
+                </article>
+                <article class="item">
                     <img src="./resources/img-bedford-bizarre.webp" alt="Bedford Bizarre Tea">
-                    <h4>Bedford Bizarre Tea</h4>
-                </div>
+                    <h3>Bedford Bizarre Tea</h3>
+                </article>
             </div>
         </section>
 
-<!--Locations Section-->
-
-        <section class="locations" id="locations">
-            <h2 class="location-header">Locations</h2>
+        <!-- Locations Section -->
+        <section class="locations" id="locations" aria-labelledby="locations-title">
+            <h2 id="locations-title" class="location-header">Locations</h2>
             <div class="location-container">
-                <div class="location-item">
+                <article class="location-item">
                     <h3 class="location-text">Downtown</h3>
-                    <p class="location-text">384 West 4th St<br>Suite 108<br>Portland, Maine</p>
-                </div>
-                <div class="location-item">
+                    <address class="location-text">
+                        384 West 4th St<br>
+                        Suite 108<br>
+                        Portland, Maine
+                    </address>
+                </article>
+                <article class="location-item">
                     <h3 class="location-text">East Bayside</h3>
-                    <p class="location-text">3433 Phisherman's Avenue<br>(Northwest Corner)<br>Portland, Maine</p>
-                </div>
-                <div class="location-item">
+                    <address class="location-text">
+                        3433 Fisherman's Avenue<br>
+                        (Northwest Corner)<br>
+                        Portland, Maine
+                    </address>
+                </article>
+                <article class="location-item">
                     <h3 class="location-text">Oakdale</h3>
-                    <p class="location-text">515 Crescent Avenue<br>Second Floor<br>Portland, Maine</p>
-                </div>
+                    <address class="location-text">
+                        515 Crescent Avenue<br>
+                        Second Floor<br>
+                        Portland, Maine
+                    </address>
+                </article>
             </div>
         </section>
-
     </main>
 
     <footer>
         <h2>The Tea Cozy</h2>
-        <h5>contact@theteacozy.com</h5>
-        <h5>917-555-8904</h5>
-        <h5 id="copyright">copyright The Tea Cozy 2017</h5>
+        <p><a href="mailto:contact@theteacozy.com">contact@theteacozy.com</a></p>
+        <p><a href="tel:+19175558904">917-555-8904</a></p>
+        <p id="copyright">&copy; 2017 The Tea Cozy</p>
     </footer>
-
 </body>
 
 </html>
