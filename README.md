@@ -70,20 +70,20 @@ To get the project running locally:
 ```plaintext
 tea-cozy-website/
 │
-├── index.html                  # Main HTML file
+├── index.html                          # Main HTML file
 ├── resources/
 │   ├── css/
-│   │   └── index.css           # CSS file for styling
-│   ├── img-tea-cozy-logo.webp  # Tea Cozy Logo
-│   ├── img-mission-background.webp # Mission section background
-│   ├── img-berryblitz.webp     # Featured Tea: Berry Blitz
-│   ├── img-spiced-rum.webp     # Featured Tea: Spiced Rum
-│   ├── img-donut.webp          # Featured Tea: Seasonal Donuts
-│   ├── img-myrtle-ave.jpg      # Featured Tea: Myrtle Ave
-│   ├── img-bedford-bizarre.webp# Featured Tea: Bedford Bizarre
-│   └── img-locations-background.webp # Locations section background
-├── README.md                   # Project documentation
-└── LICENSE                     # Standard MIT license
+│   │   └── index.css                   # CSS file for styling
+│   ├── img-tea-cozy-logo.webp          # Tea Cozy Logo
+│   ├── img-mission-background.webp     # Mission section background
+│   ├── img-berryblitz.webp             # Featured Tea: Berry Blitz
+│   ├── img-spiced-rum.webp             # Featured Tea: Spiced Rum
+│   ├── img-donut.webp                  # Featured Tea: Seasonal Donuts
+│   ├── img-myrtle-ave.jpg              # Featured Tea: Myrtle Ave
+│   ├── img-bedford-bizarre.webp        # Featured Tea: Bedford Bizarre
+│   └── img-locations-background.webp   # Locations section background
+├── README.md                           # Project documentation
+└── LICENSE                             # Standard MIT license
 ```
 
 ---
